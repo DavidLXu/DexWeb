@@ -1,4 +1,4 @@
-name: Update Dexterous Hands Data
+name: Deploy to GitHub Pages
 
 on:
   schedule:
@@ -9,7 +9,7 @@ on:
     branches: [ main ]
 
 jobs:
-  update-data:
+  build-and-deploy:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -61,6 +61,8 @@ jobs:
       run: |
         cd frontend
         npm run build
+        # Add .nojekyll to prevent GitHub from processing as Jekyll
+        touch build/.nojekyll
 
     - name: Setup Pages
       uses: actions/configure-pages@v3
