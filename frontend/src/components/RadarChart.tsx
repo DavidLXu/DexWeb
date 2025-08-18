@@ -159,7 +159,7 @@ const RadarChart: React.FC<RadarChartProps> = ({ hardware }) => {
       pointBackgroundColor: borderColors[originalIndex % borderColors.length],
       pointBorderColor: '#fff',
       pointBorderWidth: 1,
-      pointRadius: 3,
+      pointRadius: 0,
     })),
   };
 
@@ -183,49 +183,59 @@ const RadarChart: React.FC<RadarChartProps> = ({ hardware }) => {
           const datasets = chart.data.datasets;
           const hoveredDatasetIndex = legendItem.datasetIndex;
           
+          // Store original datasets configuration
+          if (!chart._originalDatasets) {
+            chart._originalDatasets = datasets.map((dataset: any, index: number) => {
+              const originalIndex = hardwareWithArea[index].originalIndex;
+              return {
+                backgroundColor: colors[originalIndex % colors.length],
+                borderColor: borderColors[originalIndex % borderColors.length],
+                pointRadius: 0,
+                borderWidth: 1.5,
+                pointBackgroundColor: borderColors[originalIndex % borderColors.length],
+                pointBorderColor: '#fff',
+                pointBorderWidth: 1,
+              };
+            });
+          }
           
           // Dim all datasets except the hovered one
           datasets.forEach((dataset: any, index: number) => {
             if (index !== hoveredDatasetIndex) {
               dataset.backgroundColor = 'rgba(200, 200, 200, 0.05)';
               dataset.borderColor = 'rgba(200, 200, 200, 0.2)';
-              dataset.pointRadius = 2;
+              dataset.pointRadius = 0;
               dataset.borderWidth = 1;
             } else {
               // Light up the hovered dataset
               const originalIndex = hardwareWithArea[index].originalIndex;
               dataset.backgroundColor = hoverColors[originalIndex % hoverColors.length];
               dataset.borderColor = borderColors[originalIndex % borderColors.length];
-              dataset.pointRadius = 4;
+              dataset.pointRadius = 0;
               dataset.borderWidth = 2.5;
             }
           });
-          
-          // Move hovered dataset to end of array (top layer)
-          if (hoveredDatasetIndex < datasets.length - 1) {
-            const hoveredDataset = datasets.splice(hoveredDatasetIndex, 1)[0];
-            datasets.push(hoveredDataset);
-          }
           
           chart.update('none');
         },
         onLeave: (event: any, legendItem: any, legend: any) => {
           const chart = legend.chart;
+          const datasets = chart.data.datasets;
           
-          // Completely rebuild the datasets in original order
-          const newDatasets = hardwareWithArea.map(({ item, originalIndex, dataPoints }) => ({
-            label: item.name,
-            data: dataPoints,
-            backgroundColor: colors[originalIndex % colors.length],
-            borderColor: borderColors[originalIndex % borderColors.length],
-            borderWidth: 1.5,
-            pointBackgroundColor: borderColors[originalIndex % borderColors.length],
-            pointBorderColor: '#fff',
-            pointBorderWidth: 1,
-            pointRadius: 3,
-          }));
+          // Restore all datasets to their original appearance
+          if (chart._originalDatasets) {
+            datasets.forEach((dataset: any, index: number) => {
+              const original = chart._originalDatasets[index];
+              dataset.backgroundColor = original.backgroundColor;
+              dataset.borderColor = original.borderColor;
+              dataset.pointRadius = original.pointRadius;
+              dataset.borderWidth = original.borderWidth;
+              dataset.pointBackgroundColor = original.pointBackgroundColor;
+              dataset.pointBorderColor = original.pointBorderColor;
+              dataset.pointBorderWidth = original.pointBorderWidth;
+            });
+          }
           
-          chart.data.datasets = newDatasets;
           chart.update('none');
         }
       },
