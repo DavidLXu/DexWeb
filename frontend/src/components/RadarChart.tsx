@@ -145,8 +145,8 @@ const RadarChart: React.FC<RadarChartProps> = ({ hardware }) => {
     };
   });
 
-  // Sort by area (largest first, so they appear at the bottom layer)
-  hardwareWithArea.sort((a, b) => b.area - a.area);
+  // Sort by area (smallest first, so larger areas appear at the bottom layer)
+  hardwareWithArea.sort((a, b) => a.area - b.area);
 
   const data = {
     labels: [t('fingers'), t('totalDofs'), t('actuatedDofs'), t('abduction'), t('flexion'), t('affordability')],
@@ -181,33 +181,53 @@ const RadarChart: React.FC<RadarChartProps> = ({ hardware }) => {
         onHover: (event: any, legendItem: any, legend: any) => {
           const chart = legend.chart;
           const datasets = chart.data.datasets;
+          const hoveredDatasetIndex = legendItem.datasetIndex;
+          
+          // Store original order
+          const originalDatasets = [...datasets];
           
           // Dim all datasets except the hovered one
           datasets.forEach((dataset: any, index: number) => {
-            if (index !== legendItem.datasetIndex) {
+            if (index !== hoveredDatasetIndex) {
               dataset.backgroundColor = 'rgba(200, 200, 200, 0.05)';
               dataset.borderColor = 'rgba(200, 200, 200, 0.2)';
+              dataset.pointRadius = 2;
+              dataset.borderWidth = 1;
             } else {
               // Light up the hovered dataset
               const originalIndex = hardwareWithArea[index].originalIndex;
               dataset.backgroundColor = hoverColors[originalIndex % hoverColors.length];
               dataset.borderColor = borderColors[originalIndex % borderColors.length];
+              dataset.pointRadius = 4;
+              dataset.borderWidth = 2.5;
             }
           });
+          
+          // Move hovered dataset to end of array (top layer)
+          if (hoveredDatasetIndex < datasets.length - 1) {
+            const hoveredDataset = datasets.splice(hoveredDatasetIndex, 1)[0];
+            datasets.push(hoveredDataset);
+          }
           
           chart.update('none');
         },
         onLeave: (event: any, legendItem: any, legend: any) => {
           const chart = legend.chart;
-          const datasets = chart.data.datasets;
           
-          // Restore original opacity for all datasets
-          datasets.forEach((dataset: any, index: number) => {
-            const originalIndex = hardwareWithArea[index].originalIndex;
-            dataset.backgroundColor = colors[originalIndex % colors.length];
-            dataset.borderColor = borderColors[originalIndex % borderColors.length];
-          });
+          // Completely rebuild the datasets in original order
+          const newDatasets = hardwareWithArea.map(({ item, originalIndex, dataPoints }) => ({
+            label: item.name,
+            data: dataPoints,
+            backgroundColor: colors[originalIndex % colors.length],
+            borderColor: borderColors[originalIndex % borderColors.length],
+            borderWidth: 1.5,
+            pointBackgroundColor: borderColors[originalIndex % borderColors.length],
+            pointBorderColor: '#fff',
+            pointBorderWidth: 1,
+            pointRadius: 3,
+          }));
           
+          chart.data.datasets = newDatasets;
           chart.update('none');
         }
       },
