@@ -42,8 +42,8 @@ function AppContent() {
     try {
       setLoading(true);
       const [hardwareRes, papersRes] = await Promise.all([
-        axios.get('/hardware.json'),
-        axios.get('/papers.json')
+        axios.get('/DexWeb/hardware.json'),
+        axios.get('/DexWeb/papers.json')
       ]);
       setHardware(hardwareRes.data);
       setPapers(papersRes.data);
