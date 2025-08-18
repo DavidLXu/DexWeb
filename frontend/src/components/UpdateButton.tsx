@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
-import axios from 'axios';
 
 interface UpdateButtonProps {
   onUpdateComplete: () => void;
