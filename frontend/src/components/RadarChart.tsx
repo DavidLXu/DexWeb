@@ -183,8 +183,6 @@ const RadarChart: React.FC<RadarChartProps> = ({ hardware }) => {
           const datasets = chart.data.datasets;
           const hoveredDatasetIndex = legendItem.datasetIndex;
           
-          // Store original order
-          const originalDatasets = [...datasets];
           
           // Dim all datasets except the hovered one
           datasets.forEach((dataset: any, index: number) => {
