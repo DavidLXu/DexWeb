@@ -127,6 +127,22 @@ const translations: Translations = {
     en: 'Abstract',
     zh: '摘要'
   },
+  siteAnalytics: {
+    en: 'Site Analytics',
+    zh: '网站分析'
+  },
+  totalViews: {
+    en: 'Total Views',
+    zh: '总访问量'
+  },
+  todayViews: {
+    en: 'Today\'s Views',
+    zh: '今日访问'
+  },
+  dailyViews: {
+    en: 'Daily Views',
+    zh: '每日访问'
+  },
   noPapersFound: {
     en: 'No papers found for the selected category. The agent will discover and update research papers automatically.',
     zh: '所选分类下未找到论文。系统将自动发现和更新研究论文。'

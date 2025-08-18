@@ -5,6 +5,7 @@ import HardwareSection from './components/HardwareSection';
 import PapersSection from './components/PapersSection';
 import LanguageSwitcher from './components/LanguageSwitcher';
 import UpdateButton from './components/UpdateButton';
+import Analytics from './components/Analytics';
 
 interface Hardware {
   id: string;
@@ -88,6 +89,8 @@ function AppContent() {
           {error}
         </div>
       )}
+
+      <Analytics />
 
       <div className="tabs">
         <button
