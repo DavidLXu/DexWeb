@@ -1,0 +1,77 @@
+name: Update Dexterous Hands Data
+
+on:
+  schedule:
+    # Run every 6 hours (GitHub Actions free tier limitation)
+    - cron: '0 */6 * * *'
+  workflow_dispatch: # Allow manual triggering
+  push:
+    branches: [ main ]
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: |
+        npm install
+        cd frontend && npm install
+
+    - name: Run data discovery agents
+      env:
+        QWEN_API_KEY: ${{ secrets.QWEN_API_KEY }}
+      run: |
+        # Create data directory if it doesn't exist
+        mkdir -p data
+        
+        # Initialize empty data files if they don't exist
+        if [ ! -f data/hardware.json ]; then
+          echo "[]" > data/hardware.json
+        fi
+        if [ ! -f data/papers.json ]; then
+          echo "[]" > data/papers.json
+        fi
+        
+        # Run the discovery agents
+        node scripts/update-data.js
+
+    - name: Copy updated data to frontend
+      run: |
+        cp data/hardware.json frontend/public/
+        cp data/papers.json frontend/public/
+
+    - name: Build frontend
+      run: |
+        cd frontend
+        npm run build
+
+    - name: Upload artifacts
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: frontend/build
+
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
+
+    - name: Commit updated data
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add data/hardware.json data/papers.json frontend/public/hardware.json frontend/public/papers.json
+        git diff --staged --quiet || git commit -m "🤖 Auto-update dexterous hands data - $(date)"
+        git push

@@ -1,0 +1,4 @@
+{
+  "ignore": ["data/*", "frontend/*", "node_modules/*"],
+  "ext": "js,json"
+}
