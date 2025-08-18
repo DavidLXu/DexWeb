@@ -242,14 +242,14 @@
   {
     "id": "dlr-hit-hand-ii",
     "name": "DLR-HIT Hand II",
-    "manufacturer": "DLR",
+    "manufacturer": "DLR/HIT",
     "fingers": 5,
-    "dofs": 20,
-    "actuatedDofs": 20,
+    "dofs": 15,
+    "actuatedDofs": 15,
     "abduction": true,
     "flexion": true,
-    "price": 0,
-    "lastUpdated": "2025-08-18T06:58:23.330Z"
+    "price": 80000,
+    "lastUpdated": "2025-08-18T07:00:00.502Z"
   },
   {
     "id": "onrobot-rg2",
@@ -633,7 +633,19 @@
     "abduction": true,
     "flexion": true,
     "price": 150000,
-    "lastUpdated": "2025-08-18T06:33:42.479Z"
+    "lastUpdated": "2025-08-18T07:00:00.502Z"
+  },
+  {
+    "id": "allegro-hand-v2",
+    "name": "Allegro Hand V2",
+    "manufacturer": "Wonik Robotics",
+    "fingers": 4,
+    "dofs": 16,
+    "actuatedDofs": 16,
+    "abduction": true,
+    "flexion": true,
+    "price": 35000,
+    "lastUpdated": "2025-08-18T07:00:00.502Z"
   },
   {
     "id": "barrett-hand",
@@ -645,7 +657,7 @@
     "abduction": true,
     "flexion": true,
     "price": 25000,
-    "lastUpdated": "2025-08-18T06:33:42.479Z"
+    "lastUpdated": "2025-08-18T07:00:00.502Z"
   },
   {
     "id": "schunk-svh-5-finger-hand",
@@ -657,6 +669,6 @@
     "abduction": false,
     "flexion": true,
     "price": 45000,
-    "lastUpdated": "2025-08-18T06:33:42.479Z"
+    "lastUpdated": "2025-08-18T07:00:00.502Z"
   }
 ]
