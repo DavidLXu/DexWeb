@@ -39,13 +39,29 @@ interface RadarChartProps {
 
 const RadarChart: React.FC<RadarChartProps> = ({ hardware }) => {
   const { t } = useLanguage();
+  
+  // Expanded color palette for all hands with more transparency
   const colors = [
-    'rgba(102, 126, 234, 0.6)',
-    'rgba(118, 75, 162, 0.6)',
-    'rgba(255, 99, 132, 0.6)',
-    'rgba(54, 162, 235, 0.6)',
-    'rgba(255, 206, 86, 0.6)',
-    'rgba(75, 192, 192, 0.6)',
+    'rgba(102, 126, 234, 0.15)',
+    'rgba(118, 75, 162, 0.15)',
+    'rgba(255, 99, 132, 0.15)',
+    'rgba(54, 162, 235, 0.15)',
+    'rgba(255, 206, 86, 0.15)',
+    'rgba(75, 192, 192, 0.15)',
+    'rgba(255, 159, 64, 0.15)',
+    'rgba(153, 102, 255, 0.15)',
+    'rgba(255, 99, 255, 0.15)',
+    'rgba(54, 235, 162, 0.15)',
+    'rgba(235, 54, 162, 0.15)',
+    'rgba(162, 235, 54, 0.15)',
+    'rgba(235, 162, 54, 0.15)',
+    'rgba(162, 54, 235, 0.15)',
+    'rgba(54, 162, 54, 0.15)',
+    'rgba(162, 54, 54, 0.15)',
+    'rgba(54, 54, 235, 0.15)',
+    'rgba(235, 235, 54, 0.15)',
+    'rgba(54, 235, 235, 0.15)',
+    'rgba(192, 75, 192, 0.15)',
   ];
 
   const borderColors = [
@@ -55,6 +71,43 @@ const RadarChart: React.FC<RadarChartProps> = ({ hardware }) => {
     'rgba(54, 162, 235, 1)',
     'rgba(255, 206, 86, 1)',
     'rgba(75, 192, 192, 1)',
+    'rgba(255, 159, 64, 1)',
+    'rgba(153, 102, 255, 1)',
+    'rgba(255, 99, 255, 1)',
+    'rgba(54, 235, 162, 1)',
+    'rgba(235, 54, 162, 1)',
+    'rgba(162, 235, 54, 1)',
+    'rgba(235, 162, 54, 1)',
+    'rgba(162, 54, 235, 1)',
+    'rgba(54, 162, 54, 1)',
+    'rgba(162, 54, 54, 1)',
+    'rgba(54, 54, 235, 1)',
+    'rgba(235, 235, 54, 1)',
+    'rgba(54, 235, 235, 1)',
+    'rgba(192, 75, 192, 1)',
+  ];
+
+  const hoverColors = [
+    'rgba(102, 126, 234, 0.7)',
+    'rgba(118, 75, 162, 0.7)',
+    'rgba(255, 99, 132, 0.7)',
+    'rgba(54, 162, 235, 0.7)',
+    'rgba(255, 206, 86, 0.7)',
+    'rgba(75, 192, 192, 0.7)',
+    'rgba(255, 159, 64, 0.7)',
+    'rgba(153, 102, 255, 0.7)',
+    'rgba(255, 99, 255, 0.7)',
+    'rgba(54, 235, 162, 0.7)',
+    'rgba(235, 54, 162, 0.7)',
+    'rgba(162, 235, 54, 0.7)',
+    'rgba(235, 162, 54, 0.7)',
+    'rgba(162, 54, 235, 0.7)',
+    'rgba(54, 162, 54, 0.7)',
+    'rgba(162, 54, 54, 0.7)',
+    'rgba(54, 54, 235, 0.7)',
+    'rgba(235, 235, 54, 0.7)',
+    'rgba(54, 235, 235, 0.7)',
+    'rgba(192, 75, 192, 0.7)',
   ];
 
   const normalizeValue = (value: number, max: number) => {
@@ -70,8 +123,8 @@ const RadarChart: React.FC<RadarChartProps> = ({ hardware }) => {
     affordability: Math.max(...hardware.map(h => h.price), 100000),
   };
 
-  // Calculate area for each hardware item to sort by size
-  const hardwareWithArea = hardware.slice(0, 6).map((item, index) => {
+  // Calculate area for ALL hardware items to sort by size
+  const hardwareWithArea = hardware.map((item, index) => {
     const dataPoints = [
       normalizeValue(item.fingers, maxValues.fingers),
       normalizeValue(item.dofs, maxValues.dofs),
@@ -86,7 +139,7 @@ const RadarChart: React.FC<RadarChartProps> = ({ hardware }) => {
     
     return {
       item,
-      index,
+      originalIndex: index,
       dataPoints,
       area
     };
@@ -97,16 +150,16 @@ const RadarChart: React.FC<RadarChartProps> = ({ hardware }) => {
 
   const data = {
     labels: [t('fingers'), t('totalDofs'), t('actuatedDofs'), t('abduction'), t('flexion'), t('affordability')],
-    datasets: hardwareWithArea.map(({ item, index, dataPoints }) => ({
+    datasets: hardwareWithArea.map(({ item, originalIndex, dataPoints }, sortedIndex) => ({
       label: item.name,
       data: dataPoints,
-      backgroundColor: colors[index],
-      borderColor: borderColors[index],
-      borderWidth: 2,
-      pointBackgroundColor: borderColors[index],
+      backgroundColor: colors[originalIndex % colors.length],
+      borderColor: borderColors[originalIndex % borderColors.length],
+      borderWidth: 1.5,
+      pointBackgroundColor: borderColors[originalIndex % borderColors.length],
       pointBorderColor: '#fff',
-      pointBorderWidth: 2,
-      pointRadius: 4,
+      pointBorderWidth: 1,
+      pointRadius: 3,
     })),
   };
 
@@ -116,19 +169,29 @@ const RadarChart: React.FC<RadarChartProps> = ({ hardware }) => {
     plugins: {
       legend: {
         position: 'top' as const,
+        maxHeight: 200,
+        labels: {
+          boxWidth: 15,
+          boxHeight: 15,
+          padding: 8,
+          font: {
+            size: 11
+          }
+        },
         onHover: (event: any, legendItem: any, legend: any) => {
           const chart = legend.chart;
           const datasets = chart.data.datasets;
           
-          // Dim all datasets
+          // Dim all datasets except the hovered one
           datasets.forEach((dataset: any, index: number) => {
             if (index !== legendItem.datasetIndex) {
-              dataset.backgroundColor = dataset.backgroundColor.replace(/0\.\d+/, '0.1');
-              dataset.borderColor = dataset.borderColor.replace(/1\)/, '0.3)');
+              dataset.backgroundColor = 'rgba(200, 200, 200, 0.05)';
+              dataset.borderColor = 'rgba(200, 200, 200, 0.2)';
             } else {
-              // Highlight the hovered dataset
-              dataset.backgroundColor = dataset.backgroundColor.replace(/0\.\d+/, '0.8');
-              dataset.borderColor = dataset.borderColor.replace(/0\.\d+\)/, '1)');
+              // Light up the hovered dataset
+              const originalIndex = hardwareWithArea[index].originalIndex;
+              dataset.backgroundColor = hoverColors[originalIndex % hoverColors.length];
+              dataset.borderColor = borderColors[originalIndex % borderColors.length];
             }
           });
           
@@ -140,9 +203,9 @@ const RadarChart: React.FC<RadarChartProps> = ({ hardware }) => {
           
           // Restore original opacity for all datasets
           datasets.forEach((dataset: any, index: number) => {
-            const originalIndex = hardwareWithArea[index].index;
-            dataset.backgroundColor = colors[originalIndex];
-            dataset.borderColor = borderColors[originalIndex];
+            const originalIndex = hardwareWithArea[index].originalIndex;
+            dataset.backgroundColor = colors[originalIndex % colors.length];
+            dataset.borderColor = borderColors[originalIndex % borderColors.length];
           });
           
           chart.update('none');

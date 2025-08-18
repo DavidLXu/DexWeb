@@ -1,30 +1,56 @@
 # DexWeb
 **DexWeb - Dexterous Hands Hub**
 
-A comprehensive website for tracking dexterous robotic hand hardware and research papers, featuring AI-powered agents for automatic discovery and updates.
+A comprehensive website for tracking dexterous robotic hand hardware and research papers, featuring AI-powered agents for automatic discovery, real-time analytics, and advanced interactive visualizations.
 
 🌐 **Live Site**: [https://davidlxu.github.io/DexWeb/](https://davidlxu.github.io/DexWeb/)
 
-## Features
+## ✨ Key Features
 
-- 🤖 **Hardware Comparison**: Interactive radar charts comparing dexterous hand specifications
-- 📚 **Research Papers**: Curated collection of recent papers on dexterous hand manipulation
-- 🧠 **AI Agents**: Automated discovery using Qwen API for hardware and paper updates
-- 🔄 **Auto Updates**: GitHub Actions runs every 6 hours to discover new research
-- 📊 **Interactive Visualizations**: Chart.js powered comparisons and analytics
-- 🌍 **Bilingual Support**: English/Chinese language switching
-- 📱 **Responsive Design**: Works seamlessly on desktop and mobile
+### 🤖 **Advanced Hardware Comparison**
+- **Comprehensive Radar Charts**: Compare ALL dexterous hands simultaneously with intelligent transparency
+- **Smart Layering**: Larger area hands positioned at bottom to prevent covering
+- **Interactive Legends**: Hover to highlight specific hands while dimming others
+- **20+ Unique Colors**: Distinct visualization for each robotic hand
 
-## Tech Stack
+### 📚 **Research Paper Tracking**
+- **Curated Collection**: Latest papers on dexterous hand manipulation
+- **5 Research Categories**: RL, Imitation Learning, VLAs, Control, Optimization
+- **Real-time Discovery**: AI agents continuously find new research
 
-- **Frontend**: React with TypeScript, Chart.js for visualizations
+### 🧠 **AI-Powered Intelligence**
+- **Qwen API Integration**: Advanced AI for hardware and paper discovery
+- **Automated Updates**: GitHub Actions runs every 6 hours
+- **Smart Data Enrichment**: Realistic mock data when API unavailable
+
+### 📊 **Real Analytics & Tracking**
+- **Google Analytics 4**: Real global visitor tracking
+- **Live View Counter**: Session-based unique visitor counting
+- **Daily Patterns**: 7-day visitor analytics with mini bar charts
+- **Privacy-First**: GDPR compliant tracking
+
+### 🌍 **Multilingual Experience**
+- **Bilingual Support**: Seamless English/Chinese switching
+- **Technical Accuracy**: Hand and company names preserved
+- **Context-Aware**: Smart translation for technical content
+
+### 📱 **Modern Design**
+- **Responsive Layout**: Optimized for desktop and mobile
+- **Performance Optimized**: Fast loading with efficient data handling
+- **Accessibility**: Clean, user-friendly interface
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React with TypeScript, Chart.js for advanced visualizations
+- **Analytics**: Google Analytics 4 with real-time visitor tracking
 - **Deployment**: GitHub Pages with automated CI/CD
-- **AI Integration**: Qwen API for intelligent data discovery (optional)
-- **Storage**: JSON file-based data storage
-- **Automation**: GitHub Actions for scheduled updates
-- **Build System**: Create React App with ESLint configuration
+- **AI Integration**: Qwen API for intelligent data discovery
+- **Data Storage**: Optimized JSON file-based persistence
+- **Automation**: GitHub Actions with 6-hour scheduled updates
+- **Build System**: Create React App with comprehensive ESLint configuration
+- **Internationalization**: React Context-based bilingual support
 
-## Quick Start
+## 🚀 Quick Start
 
 ### GitHub Pages Deployment (Recommended)
 
@@ -33,10 +59,14 @@ A comprehensive website for tracking dexterous robotic hand hardware and researc
    - Go to your repo Settings → Pages
    - Source: "Deploy from a branch"
    - Branch: Select the branch with your built site
-3. **Optional: Add API Key**:
+3. **Setup Analytics** (Optional):
+   - Get Google Analytics 4 measurement ID
+   - Replace `G-1GYLMSFH8S` in `frontend/public/index.html`
+   - Real visitor tracking starts immediately
+4. **Add AI Integration** (Optional):
    - Go to Settings → Secrets and variables → Actions
    - Add secret: `QWEN_API_KEY` with your Qwen API key
-   - Without API key, the system uses realistic mock data
+   - Without API key, system uses intelligent mock data
 
 ### Local Development
 
@@ -54,22 +84,28 @@ npm start
 
 This starts the frontend at `http://localhost:3000`.
 
-## Architecture
+## 🏗️ Architecture
 
-### Current: GitHub Pages + GitHub Actions
+### Current: GitHub Pages + Real Analytics
 
 ```
 ┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
-│   GitHub Actions│───▶│  AI Agents       │───▶│  Static Files   │
+│   GitHub Actions│───▶│  AI Agents       │───▶│  Static Site    │
 │   (Every 6hrs)  │    │  Data Discovery  │    │  (GitHub Pages) │
 └─────────────────┘    └──────────────────┘    └─────────────────┘
-                              │
-                              ▼
-                       ┌──────────────────┐
-                       │  JSON Data Files │
-                       │  hardware.json   │
-                       │  papers.json     │
-                       └──────────────────┘
+                              │                         │
+                              ▼                         ▼
+                       ┌──────────────────┐    ┌─────────────────┐
+                       │  JSON Data Files │    │ Google Analytics│
+                       │  hardware.json   │    │ Real Tracking   │
+                       │  papers.json     │    │ G-1GYLMSFH8S    │
+                       └──────────────────┘    └─────────────────┘
+                                                        │
+                                                        ▼
+                                              ┌─────────────────┐
+                                              │ Live Analytics  │
+                                              │ Footer Display  │
+                                              └─────────────────┘
 ```
 
 ### Legacy: Full-Stack (Available in `backend/` folder)
@@ -85,20 +121,28 @@ cp .env.example .env
 npm run dev
 ```
 
-## API Integration
+## 🔧 Configuration
 
-### Qwen API Key Setup
+### Google Analytics Setup
 
-1. Get your API key from [Alibaba Cloud DashScope](https://dashscope.aliyuncs.com/)
-2. Add to GitHub Secrets: `QWEN_API_KEY`
-3. Next automated run will use real AI discovery
+1. **Get GA4 Measurement ID**: Visit [Google Analytics](https://analytics.google.com/)
+2. **Create Property**: For your domain `davidlxu.github.io`
+3. **Update Code**: Replace `G-1GYLMSFH8S` in `frontend/public/index.html`
+4. **Deploy**: Real global tracking starts immediately
 
-### Without API Key
+### Qwen API Integration
 
-The system works perfectly with realistic mock data:
-- Generates diverse dexterous hand hardware specs
-- Creates academic papers across 5 research categories
-- Simulates ArXiv and IEEE paper discovery
+1. **Get API Key**: From [Alibaba Cloud DashScope](https://dashscope.aliyuncs.com/)
+2. **Add Secret**: GitHub Settings → Secrets → `QWEN_API_KEY`
+3. **Automatic Discovery**: Next run uses real AI agents
+
+### Mock Data Mode
+
+Without API keys, system provides intelligent mock data:
+- **Hardware Discovery**: 20+ diverse dexterous hands with realistic specs
+- **Research Papers**: Academic papers across all 5 categories
+- **Source Simulation**: ArXiv and IEEE discovery patterns
+- **Real Analytics**: Local session tracking with GA4 template
 
 ## Data Structure
 
@@ -171,11 +215,14 @@ The automated system:
 4. **Deploys** to GitHub Pages automatically
 5. **Commits** updated data back to the repository
 
-## Deployment History
+## 📈 Deployment History
 
 - **v1.0**: Backend + Frontend architecture
 - **v2.0**: GitHub Pages deployment with automated updates
 - **v2.1**: Node.js compatibility fixes and ESLint compliance
+- **v2.2**: Real Google Analytics integration (G-1GYLMSFH8S)
+- **v2.3**: Advanced radar charts with all hands visualization
+- **v2.4**: Smart layering and interactive legend hover system
 
 ## Contributing
 
