@@ -90,8 +90,6 @@ function AppContent() {
         </div>
       )}
 
-      <Analytics />
-
       <div className="tabs">
         <button
           className={`tab ${activeTab === 'hardware' ? 'active' : ''}`}
@@ -114,6 +112,8 @@ function AppContent() {
       {activeTab === 'papers' && (
         <PapersSection papers={papers} />
       )}
+      
+      <Analytics />
     </div>
   );
 }
