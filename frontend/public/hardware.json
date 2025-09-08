@@ -1,5 +1,245 @@
 [
   {
+    "id": "kinova-gen3-hand",
+    "name": "Kinova Gen3 Hand",
+    "manufacturer": "Kinova",
+    "fingers": 5,
+    "dofs": 15,
+    "actuatedDofs": 15,
+    "abduction": true,
+    "flexion": true,
+    "price": 0,
+    "lastUpdated": "2025-09-08T00:45:01.566Z"
+  },
+  {
+    "id": "nimbro-hand",
+    "name": "NimbRo-Hand",
+    "manufacturer": "University of Bonn (NimbRo Lab)",
+    "fingers": 5,
+    "dofs": 15,
+    "actuatedDofs": 15,
+    "abduction": true,
+    "flexion": true,
+    "price": 0,
+    "lastUpdated": "2025-09-08T00:45:01.566Z"
+  },
+  {
+    "id": "onrobot-rg2",
+    "name": "OnRobot RG2",
+    "manufacturer": "OnRobot",
+    "fingers": 2,
+    "dofs": 1,
+    "actuatedDofs": 1,
+    "abduction": true,
+    "flexion": false,
+    "price": 1295,
+    "lastUpdated": "2025-09-08T00:45:01.566Z"
+  },
+  {
+    "id": "pneunet-hand",
+    "name": "PneuNet Hand",
+    "manufacturer": "MIT CSAIL",
+    "fingers": 5,
+    "dofs": 15,
+    "actuatedDofs": 15,
+    "abduction": true,
+    "flexion": true,
+    "price": 0,
+    "lastUpdated": "2025-09-08T00:45:01.566Z"
+  },
+  {
+    "id": "mekahands-m3",
+    "name": "MekaHands M3",
+    "manufacturer": "Meka Robotics",
+    "fingers": 5,
+    "dofs": 15,
+    "actuatedDofs": 15,
+    "abduction": true,
+    "flexion": true,
+    "price": 0,
+    "lastUpdated": "2025-09-08T00:45:01.566Z"
+  },
+  {
+    "id": "trossen-robotics-t-hand",
+    "name": "Trossen Robotics T-HAND",
+    "manufacturer": "Trossen Robotics",
+    "fingers": 5,
+    "dofs": 15,
+    "actuatedDofs": 15,
+    "abduction": true,
+    "flexion": true,
+    "price": 0,
+    "lastUpdated": "2025-09-08T00:45:01.566Z"
+  },
+  {
+    "id": "cubot-hand",
+    "name": "Cubot Hand",
+    "manufacturer": "Cubot",
+    "fingers": 5,
+    "dofs": 15,
+    "actuatedDofs": 15,
+    "abduction": true,
+    "flexion": true,
+    "price": 0,
+    "lastUpdated": "2025-09-08T00:45:01.566Z"
+  },
+  {
+    "id": "soft-robotics-inc-gripper",
+    "name": "Soft Robotics Inc. Gripper",
+    "manufacturer": "Soft Robotics Inc.",
+    "fingers": 2,
+    "dofs": 1,
+    "actuatedDofs": 1,
+    "abduction": true,
+    "flexion": false,
+    "price": 0,
+    "lastUpdated": "2025-09-08T00:45:01.566Z"
+  },
+  {
+    "id": "adept-viper-sx-650",
+    "name": "Adept Viper SX 650",
+    "manufacturer": "Adept",
+    "fingers": 2,
+    "dofs": 1,
+    "actuatedDofs": 1,
+    "abduction": true,
+    "flexion": false,
+    "price": 0,
+    "lastUpdated": "2025-09-08T00:45:01.566Z"
+  },
+  {
+    "id": "festo-bionic-handling-assistant",
+    "name": "Festo Bionic Handling Assistant",
+    "manufacturer": "Festo",
+    "fingers": 4,
+    "dofs": 12,
+    "actuatedDofs": 12,
+    "abduction": true,
+    "flexion": true,
+    "price": 0,
+    "lastUpdated": "2025-09-08T00:45:01.565Z"
+  },
+  {
+    "id": "open-hand-project-oh-1",
+    "name": "Open Hand Project OH-1",
+    "manufacturer": "Open Hand Project",
+    "fingers": 5,
+    "dofs": 15,
+    "actuatedDofs": 15,
+    "abduction": true,
+    "flexion": true,
+    "price": 0,
+    "lastUpdated": "2025-09-08T00:45:01.565Z"
+  },
+  {
+    "id": "righthand-2-0",
+    "name": "RightHand 2.0",
+    "manufacturer": "Right Hand Robotics",
+    "fingers": 5,
+    "dofs": 15,
+    "actuatedDofs": 15,
+    "abduction": true,
+    "flexion": true,
+    "price": 0,
+    "lastUpdated": "2025-09-08T00:45:01.565Z"
+  },
+  {
+    "id": "ufactory-uarm-plus",
+    "name": "UFactory UArm Plus",
+    "manufacturer": "UFactory",
+    "fingers": 5,
+    "dofs": 10,
+    "actuatedDofs": 10,
+    "abduction": true,
+    "flexion": true,
+    "price": 0,
+    "lastUpdated": "2025-09-08T00:45:01.565Z"
+  },
+  {
+    "id": "baxter-s-right-arm-gripper-",
+    "name": "Baxter's Right Arm (Gripper)",
+    "manufacturer": "Rethink Robotics",
+    "fingers": 2,
+    "dofs": 1,
+    "actuatedDofs": 1,
+    "abduction": true,
+    "flexion": false,
+    "price": 0,
+    "lastUpdated": "2025-09-08T00:45:01.565Z"
+  },
+  {
+    "id": "robotiq-adaptive-gripper",
+    "name": "Robotiq Adaptive Gripper",
+    "manufacturer": "Robotiq",
+    "fingers": 2,
+    "dofs": 1,
+    "actuatedDofs": 1,
+    "abduction": true,
+    "flexion": false,
+    "price": 1495,
+    "lastUpdated": "2025-09-08T00:45:01.564Z"
+  },
+  {
+    "id": "shadow-hand-sdh-2",
+    "name": "Shadow Hand SDH-2",
+    "manufacturer": "Shadow Robot Company",
+    "fingers": 5,
+    "dofs": 20,
+    "actuatedDofs": 14,
+    "abduction": true,
+    "flexion": true,
+    "price": 0,
+    "lastUpdated": "2025-09-08T00:45:01.564Z"
+  },
+  {
+    "id": "dlr-hand-i",
+    "name": "DLR Hand I",
+    "manufacturer": "DLR",
+    "fingers": 5,
+    "dofs": 18,
+    "actuatedDofs": 18,
+    "abduction": true,
+    "flexion": true,
+    "price": 0,
+    "lastUpdated": "2025-09-08T00:45:01.564Z"
+  },
+  {
+    "id": "schunk-sl-85",
+    "name": "Schunk SL-85",
+    "manufacturer": "Schunk",
+    "fingers": 5,
+    "dofs": 20,
+    "actuatedDofs": 16,
+    "abduction": true,
+    "flexion": true,
+    "price": 0,
+    "lastUpdated": "2025-09-08T00:45:01.564Z"
+  },
+  {
+    "id": "wonik-x-hand-s",
+    "name": "Wonik X-Hand S",
+    "manufacturer": "Wonik Robotics",
+    "fingers": 5,
+    "dofs": 19,
+    "actuatedDofs": 19,
+    "abduction": true,
+    "flexion": true,
+    "price": 0,
+    "lastUpdated": "2025-09-08T00:45:01.564Z"
+  },
+  {
+    "id": "barretthand-b3-270",
+    "name": "BarrettHand B3-270",
+    "manufacturer": "Barrett Technology",
+    "fingers": 3,
+    "dofs": 18,
+    "actuatedDofs": 18,
+    "abduction": false,
+    "flexion": true,
+    "price": 0,
+    "lastUpdated": "2025-09-08T00:45:01.564Z"
+  },
+  {
     "id": "hit-hil-hand",
     "name": "HIT/HIL Hand",
     "manufacturer": "HIT/HIL Lab",
@@ -72,18 +312,6 @@
     "lastUpdated": "2025-09-07T18:11:07.205Z"
   },
   {
-    "id": "robotiq-adaptive-gripper",
-    "name": "Robotiq Adaptive Gripper",
-    "manufacturer": "Robotiq",
-    "fingers": 2,
-    "dofs": 1,
-    "actuatedDofs": 1,
-    "abduction": true,
-    "flexion": false,
-    "price": 1500,
-    "lastUpdated": "2025-09-07T18:11:07.204Z"
-  },
-  {
     "id": "shadow-hand-hd",
     "name": "Shadow Hand HD",
     "manufacturer": "Shadow Robot Company",
@@ -140,18 +368,6 @@
     "actuatedDofs": 1,
     "abduction": false,
     "flexion": false,
-    "price": 0,
-    "lastUpdated": "2025-09-07T18:11:07.204Z"
-  },
-  {
-    "id": "festo-bionic-handling-assistant",
-    "name": "Festo Bionic Handling Assistant",
-    "manufacturer": "Festo",
-    "fingers": 5,
-    "dofs": 15,
-    "actuatedDofs": 15,
-    "abduction": true,
-    "flexion": true,
     "price": 0,
     "lastUpdated": "2025-09-07T18:11:07.204Z"
   },
@@ -228,18 +444,6 @@
     "lastUpdated": "2025-09-07T12:15:13.080Z"
   },
   {
-    "id": "kinova-gen3-hand",
-    "name": "Kinova Gen3 Hand",
-    "manufacturer": "Kinova Robotics",
-    "fingers": 5,
-    "dofs": 15,
-    "actuatedDofs": 15,
-    "abduction": true,
-    "flexion": true,
-    "price": 0,
-    "lastUpdated": "2025-09-07T12:15:13.080Z"
-  },
-  {
     "id": "dexterous-hand-by-festo",
     "name": "Dexterous Hand by Festo",
     "manufacturer": "Festo",
@@ -262,18 +466,6 @@
     "flexion": true,
     "price": 0,
     "lastUpdated": "2025-09-07T12:15:13.080Z"
-  },
-  {
-    "id": "nimbro-hand",
-    "name": "NimbRo-Hand",
-    "manufacturer": "University of Bonn (NimbRo Lab)",
-    "fingers": 5,
-    "dofs": 15,
-    "actuatedDofs": 15,
-    "abduction": true,
-    "flexion": true,
-    "price": 0,
-    "lastUpdated": "2025-09-07T12:15:13.079Z"
   },
   {
     "id": "ultrasonic-hand",
@@ -358,18 +550,6 @@
     "flexion": true,
     "price": 0,
     "lastUpdated": "2025-09-07T06:12:06.759Z"
-  },
-  {
-    "id": "onrobot-rg2",
-    "name": "OnRobot RG2",
-    "manufacturer": "OnRobot",
-    "fingers": 2,
-    "dofs": 1,
-    "actuatedDofs": 1,
-    "abduction": true,
-    "flexion": true,
-    "price": 0,
-    "lastUpdated": "2025-09-07T06:12:06.758Z"
   },
   {
     "id": "baxter-s-right-hand",
@@ -600,18 +780,6 @@
     "lastUpdated": "2025-09-07T00:46:26.125Z"
   },
   {
-    "id": "shadow-hand-sdh-2",
-    "name": "Shadow Hand SDH-2",
-    "manufacturer": "Shadow Robot Company",
-    "fingers": 5,
-    "dofs": 20,
-    "actuatedDofs": 16,
-    "abduction": true,
-    "flexion": true,
-    "price": 0,
-    "lastUpdated": "2025-09-07T00:46:26.125Z"
-  },
-  {
     "id": "dlr-hand-ii",
     "name": "DLR Hand II",
     "manufacturer": "DLR",
@@ -696,18 +864,6 @@
     "lastUpdated": "2025-09-06T18:10:57.313Z"
   },
   {
-    "id": "pneunet-hand",
-    "name": "PneuNet Hand",
-    "manufacturer": "Harvard University (SEAS)",
-    "fingers": 5,
-    "dofs": 15,
-    "actuatedDofs": 15,
-    "abduction": true,
-    "flexion": true,
-    "price": 0,
-    "lastUpdated": "2025-09-06T18:10:57.313Z"
-  },
-  {
     "id": "virtuoso-6d",
     "name": "Virtuoso 6D",
     "manufacturer": "Haption",
@@ -750,18 +906,6 @@
     "fingers": 2,
     "dofs": 1,
     "actuatedDofs": 1,
-    "abduction": true,
-    "flexion": true,
-    "price": 0,
-    "lastUpdated": "2025-09-06T18:10:57.312Z"
-  },
-  {
-    "id": "dlr-hand-i",
-    "name": "DLR Hand I",
-    "manufacturer": "DLR",
-    "fingers": 5,
-    "dofs": 20,
-    "actuatedDofs": 19,
     "abduction": true,
     "flexion": true,
     "price": 0,
@@ -1978,18 +2122,6 @@
     "flexion": true,
     "price": 0,
     "lastUpdated": "2025-09-03T12:17:41.267Z"
-  },
-  {
-    "id": "mekahands-m3",
-    "name": "MekaHands M3",
-    "manufacturer": "Meka Robotics",
-    "fingers": 5,
-    "dofs": 20,
-    "actuatedDofs": 16,
-    "abduction": true,
-    "flexion": true,
-    "price": 0,
-    "lastUpdated": "2025-09-03T06:14:08.697Z"
   },
   {
     "id": "neurobotics-neurohand",
@@ -3792,18 +3924,6 @@
     "lastUpdated": "2025-08-28T12:17:42.524Z"
   },
   {
-    "id": "open-hand-project-oh-1",
-    "name": "Open Hand Project OH-1",
-    "manufacturer": "Open Hand Project",
-    "fingers": 5,
-    "dofs": 15,
-    "actuatedDofs": 15,
-    "abduction": true,
-    "flexion": true,
-    "price": 0,
-    "lastUpdated": "2025-08-28T06:14:58.282Z"
-  },
-  {
     "id": "grippy-by-nimbro",
     "name": "Grippy by NimbRo",
     "manufacturer": "NimbRo",
@@ -4762,18 +4882,6 @@
     "flexion": true,
     "price": 0,
     "lastUpdated": "2025-08-24T12:16:05.662Z"
-  },
-  {
-    "id": "schunk-sl-85",
-    "name": "Schunk SL-85",
-    "manufacturer": "Schunk",
-    "fingers": 5,
-    "dofs": 16,
-    "actuatedDofs": 12,
-    "abduction": true,
-    "flexion": true,
-    "price": 0,
-    "lastUpdated": "2025-08-24T12:16:05.661Z"
   },
   {
     "id": "biomimetic-robotic-hand-bh2-",
