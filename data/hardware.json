@@ -1,5 +1,65 @@
 [
   {
+    "id": "dlr-hit-hand-ii",
+    "name": "DLR-HIT Hand II",
+    "manufacturer": "DLR/HIT",
+    "fingers": 5,
+    "dofs": 15,
+    "actuatedDofs": 15,
+    "abduction": true,
+    "flexion": true,
+    "price": 80000,
+    "lastUpdated": "2025-10-17T06:14:27.428Z"
+  },
+  {
+    "id": "barrett-hand",
+    "name": "Barrett Hand",
+    "manufacturer": "Barrett Technology",
+    "fingers": 3,
+    "dofs": 8,
+    "actuatedDofs": 4,
+    "abduction": true,
+    "flexion": true,
+    "price": 25000,
+    "lastUpdated": "2025-10-17T06:14:27.428Z"
+  },
+  {
+    "id": "schunk-svh-5-finger-hand",
+    "name": "Schunk SVH 5-Finger Hand",
+    "manufacturer": "Schunk",
+    "fingers": 5,
+    "dofs": 9,
+    "actuatedDofs": 9,
+    "abduction": false,
+    "flexion": true,
+    "price": 45000,
+    "lastUpdated": "2025-10-17T06:14:27.428Z"
+  },
+  {
+    "id": "allegro-hand",
+    "name": "Allegro Hand",
+    "manufacturer": "Wonik Robotics",
+    "fingers": 4,
+    "dofs": 16,
+    "actuatedDofs": 16,
+    "abduction": true,
+    "flexion": true,
+    "price": 35000,
+    "lastUpdated": "2025-10-17T06:14:27.427Z"
+  },
+  {
+    "id": "shadow-dexterous-hand",
+    "name": "Shadow Dexterous Hand",
+    "manufacturer": "Shadow Robot Company",
+    "fingers": 5,
+    "dofs": 24,
+    "actuatedDofs": 20,
+    "abduction": true,
+    "flexion": true,
+    "price": 150000,
+    "lastUpdated": "2025-10-17T06:14:27.427Z"
+  },
+  {
     "id": "cassie-hand",
     "name": "Cassie Hand",
     "manufacturer": "Oregon State University",
@@ -715,18 +775,6 @@
     "dofs": 7,
     "actuatedDofs": 7,
     "abduction": false,
-    "flexion": true,
-    "price": 0,
-    "lastUpdated": "2025-10-16T06:15:20.378Z"
-  },
-  {
-    "id": "dlr-hit-hand-ii",
-    "name": "DLR-HIT Hand II",
-    "manufacturer": "DLR (German Aerospace Center)",
-    "fingers": 5,
-    "dofs": 20,
-    "actuatedDofs": 20,
-    "abduction": true,
     "flexion": true,
     "price": 0,
     "lastUpdated": "2025-10-16T06:15:20.378Z"
@@ -2094,18 +2142,6 @@
     "fingers": 5,
     "dofs": 20,
     "actuatedDofs": 20,
-    "abduction": true,
-    "flexion": true,
-    "price": 0,
-    "lastUpdated": "2025-10-13T00:46:01.346Z"
-  },
-  {
-    "id": "allegro-hand",
-    "name": "Allegro Hand",
-    "manufacturer": "Unimation",
-    "fingers": 4,
-    "dofs": 16,
-    "actuatedDofs": 16,
     "abduction": true,
     "flexion": true,
     "price": 0,
@@ -11868,18 +11904,6 @@
     "lastUpdated": "2025-08-26T12:18:44.732Z"
   },
   {
-    "id": "shadow-dexterous-hand",
-    "name": "Shadow Dexterous Hand",
-    "manufacturer": "Shadow Robot Company",
-    "fingers": 5,
-    "dofs": 24,
-    "actuatedDofs": 24,
-    "abduction": true,
-    "flexion": true,
-    "price": 0,
-    "lastUpdated": "2025-08-26T06:15:15.888Z"
-  },
-  {
     "id": "barretthand-b-h6",
     "name": "BarrettHand B-H6",
     "manufacturer": "Barrett Technology",
@@ -12634,30 +12658,6 @@
     "flexion": true,
     "price": 0,
     "lastUpdated": "2025-08-21T12:18:13.431Z"
-  },
-  {
-    "id": "barrett-hand",
-    "name": "Barrett Hand",
-    "manufacturer": "Barrett Technology",
-    "fingers": 3,
-    "dofs": 8,
-    "actuatedDofs": 4,
-    "abduction": true,
-    "flexion": true,
-    "price": 25000,
-    "lastUpdated": "2025-08-21T00:42:52.305Z"
-  },
-  {
-    "id": "schunk-svh-5-finger-hand",
-    "name": "Schunk SVH 5-Finger Hand",
-    "manufacturer": "Schunk",
-    "fingers": 5,
-    "dofs": 9,
-    "actuatedDofs": 9,
-    "abduction": false,
-    "flexion": true,
-    "price": 45000,
-    "lastUpdated": "2025-08-21T00:42:52.305Z"
   },
   {
     "id": "dexwrist-by-righthand-robotics",
