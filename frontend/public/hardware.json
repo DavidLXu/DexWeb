@@ -9,7 +9,7 @@
     "abduction": true,
     "flexion": true,
     "price": 80000,
-    "lastUpdated": "2025-11-06T00:45:04.586Z"
+    "lastUpdated": "2025-11-06T06:15:26.163Z"
   },
   {
     "id": "allegro-hand",
@@ -21,7 +21,7 @@
     "abduction": true,
     "flexion": true,
     "price": 35000,
-    "lastUpdated": "2025-11-06T00:45:04.586Z"
+    "lastUpdated": "2025-11-06T06:15:26.162Z"
   },
   {
     "id": "barrett-hand",
@@ -33,7 +33,7 @@
     "abduction": true,
     "flexion": true,
     "price": 25000,
-    "lastUpdated": "2025-11-06T00:45:04.586Z"
+    "lastUpdated": "2025-11-06T06:15:26.162Z"
   },
   {
     "id": "schunk-svh-5-finger-hand",
@@ -45,7 +45,7 @@
     "abduction": false,
     "flexion": true,
     "price": 45000,
-    "lastUpdated": "2025-11-06T00:45:04.586Z"
+    "lastUpdated": "2025-11-06T06:15:26.162Z"
   },
   {
     "id": "shadow-dexterous-hand",
@@ -57,7 +57,7 @@
     "abduction": true,
     "flexion": true,
     "price": 150000,
-    "lastUpdated": "2025-11-06T00:45:04.586Z"
+    "lastUpdated": "2025-11-06T06:15:26.162Z"
   },
   {
     "id": "kinova-gen3-hand",
