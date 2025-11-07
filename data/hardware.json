@@ -9,19 +9,7 @@
     "abduction": true,
     "flexion": true,
     "price": 80000,
-    "lastUpdated": "2025-11-07T00:44:58.893Z"
-  },
-  {
-    "id": "allegro-hand",
-    "name": "Allegro Hand",
-    "manufacturer": "Wonik Robotics",
-    "fingers": 4,
-    "dofs": 16,
-    "actuatedDofs": 16,
-    "abduction": true,
-    "flexion": true,
-    "price": 35000,
-    "lastUpdated": "2025-11-07T00:44:58.893Z"
+    "lastUpdated": "2025-11-07T06:15:05.372Z"
   },
   {
     "id": "barrett-hand",
@@ -33,7 +21,7 @@
     "abduction": true,
     "flexion": true,
     "price": 25000,
-    "lastUpdated": "2025-11-07T00:44:58.893Z"
+    "lastUpdated": "2025-11-07T06:15:05.372Z"
   },
   {
     "id": "schunk-svh-5-finger-hand",
@@ -45,7 +33,19 @@
     "abduction": false,
     "flexion": true,
     "price": 45000,
-    "lastUpdated": "2025-11-07T00:44:58.893Z"
+    "lastUpdated": "2025-11-07T06:15:05.372Z"
+  },
+  {
+    "id": "allegro-hand",
+    "name": "Allegro Hand",
+    "manufacturer": "Wonik Robotics",
+    "fingers": 4,
+    "dofs": 16,
+    "actuatedDofs": 16,
+    "abduction": true,
+    "flexion": true,
+    "price": 35000,
+    "lastUpdated": "2025-11-07T06:15:05.371Z"
   },
   {
     "id": "shadow-dexterous-hand",
@@ -57,7 +57,7 @@
     "abduction": true,
     "flexion": true,
     "price": 150000,
-    "lastUpdated": "2025-11-07T00:44:58.893Z"
+    "lastUpdated": "2025-11-07T06:15:05.371Z"
   },
   {
     "id": "kinova-gen3-hand",
