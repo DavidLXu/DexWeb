@@ -9,19 +9,7 @@
     "abduction": true,
     "flexion": true,
     "price": 80000,
-    "lastUpdated": "2026-02-06T06:38:15.466Z"
-  },
-  {
-    "id": "barrett-hand",
-    "name": "Barrett Hand",
-    "manufacturer": "Barrett Technology",
-    "fingers": 3,
-    "dofs": 8,
-    "actuatedDofs": 4,
-    "abduction": true,
-    "flexion": true,
-    "price": 25000,
-    "lastUpdated": "2026-02-06T06:38:15.466Z"
+    "lastUpdated": "2026-02-06T12:29:56.343Z"
   },
   {
     "id": "schunk-svh-5-finger-hand",
@@ -33,7 +21,19 @@
     "abduction": false,
     "flexion": true,
     "price": 45000,
-    "lastUpdated": "2026-02-06T06:38:15.466Z"
+    "lastUpdated": "2026-02-06T12:29:56.343Z"
+  },
+  {
+    "id": "barrett-hand",
+    "name": "Barrett Hand",
+    "manufacturer": "Barrett Technology",
+    "fingers": 3,
+    "dofs": 8,
+    "actuatedDofs": 4,
+    "abduction": true,
+    "flexion": true,
+    "price": 25000,
+    "lastUpdated": "2026-02-06T12:29:56.342Z"
   },
   {
     "id": "allegro-hand",
@@ -45,7 +45,7 @@
     "abduction": true,
     "flexion": true,
     "price": 35000,
-    "lastUpdated": "2026-02-06T06:38:15.466Z"
+    "lastUpdated": "2026-02-06T12:29:56.342Z"
   },
   {
     "id": "shadow-dexterous-hand",
@@ -57,7 +57,7 @@
     "abduction": true,
     "flexion": true,
     "price": 150000,
-    "lastUpdated": "2026-02-06T06:38:15.466Z"
+    "lastUpdated": "2026-02-06T12:29:56.342Z"
   },
   {
     "id": "kinova-gen3-hand",
