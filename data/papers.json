@@ -1,5 +1,173 @@
 [
   {
+    "id": "optimal-control-for-multi-fingered-robotic-hands",
+    "title": "Optimal Control for Multi-Fingered Robotic Hands",
+    "authors": [
+      "Jamie Wilson",
+      "Morgan Brown"
+    ],
+    "abstract": "This paper presents novel control strategies for coordinated movement of multi-fingered robotic hands in manipulation tasks. Our approach addresses the challenges of high-dimensional control and contact dynamics.",
+    "category": "Control",
+    "publishedDate": "2024-10-02",
+    "url": "https://arxiv.org/abs/2410.57691",
+    "source": "ArXiv",
+    "searchTerm": "hand-object manipulation",
+    "foundAt": "2026-04-26T12:36:31.126Z",
+    "lastUpdated": "2026-04-26T12:36:32.094Z"
+  },
+  {
+    "id": "trajectory-optimization-for-dexterous-grasping",
+    "title": "Trajectory Optimization for Dexterous Grasping",
+    "authors": [
+      "Thompson, M.",
+      "Davis, K.",
+      "Wilson, J."
+    ],
+    "abstract": "We propose optimization techniques for generating smooth and efficient trajectories for dexterous grasping operations.",
+    "category": "Optimization",
+    "publishedDate": "2023-11-30",
+    "url": "https://arxiv.org/abs/2311.xxxxx",
+    "lastUpdated": "2026-04-26T12:36:32.094Z",
+    "source": "ArXiv",
+    "searchTerm": "dexterous hand manipulation",
+    "foundAt": "2025-11-01T00:47:46.229Z"
+  },
+  {
+    "id": "optimal-control-strategies-for-multi-fingered-robotic-hands",
+    "title": "Optimal Control Strategies for Multi-Fingered Robotic Hands",
+    "authors": [
+      "Singh, R.",
+      "Patel, N.",
+      "Liu, X."
+    ],
+    "abstract": "This work presents novel control strategies for coordinated movement of multi-fingered robotic hands in manipulation tasks.",
+    "category": "Control",
+    "publishedDate": "2024-01-25",
+    "url": "https://arxiv.org/abs/2401.xxxxx",
+    "lastUpdated": "2026-04-26T12:36:32.094Z"
+  },
+  {
+    "id": "imitation-learning-for-complex-dexterous-manipulation",
+    "title": "Imitation Learning for Complex Dexterous Manipulation",
+    "authors": [
+      "Rodriguez, A.",
+      "Kim, J.",
+      "Brown, T."
+    ],
+    "abstract": "We explore imitation learning techniques for teaching robots complex dexterous manipulation skills through expert demonstrations.",
+    "category": "Imitation Learning",
+    "publishedDate": "2023-12-08",
+    "url": "https://arxiv.org/abs/2312.xxxxx",
+    "lastUpdated": "2026-04-26T12:36:32.094Z"
+  },
+  {
+    "id": "vla-hand-vision-language-action-models-for-dexterous-manipulation",
+    "title": "VLA-Hand: Vision-Language-Action Models for Dexterous Manipulation",
+    "authors": [
+      "Chen, L.",
+      "Wang, S.",
+      "Zhang, M."
+    ],
+    "abstract": "This paper introduces a vision-language-action model specifically designed for dexterous hand manipulation tasks.",
+    "category": "VLAs",
+    "publishedDate": "2024-03-20",
+    "url": "https://arxiv.org/abs/2403.xxxxx",
+    "lastUpdated": "2026-04-26T12:36:32.094Z"
+  },
+  {
+    "id": "learning-dexterous-manipulation-from-suboptimal-experts",
+    "title": "Learning Dexterous Manipulation from Suboptimal Experts",
+    "authors": [
+      "Jiang, Y.",
+      "Li, K.",
+      "Gupta, A."
+    ],
+    "abstract": "We present a method for learning dexterous manipulation skills from suboptimal human demonstrations using reinforcement learning.",
+    "category": "Reinforcement Learning",
+    "publishedDate": "2023-10-15",
+    "url": "https://arxiv.org/abs/2310.xxxxx",
+    "lastUpdated": "2026-04-26T12:36:32.094Z"
+  },
+  {
+    "id": "vla-based-dexterous-manipulation-planning",
+    "title": "VLA-Based Dexterous Manipulation Planning",
+    "authors": [
+      "Morgan Smith"
+    ],
+    "abstract": "We introduce a vision-language-action model specifically designed for dexterous hand manipulation tasks. The model integrates visual perception, natural language understanding, and motor control for improved manipulation capabilities.",
+    "category": "VLAs",
+    "publishedDate": "2023-06-23",
+    "url": "https://arxiv.org/abs/2306.64107",
+    "source": "ArXiv",
+    "searchTerm": "hand-object manipulation",
+    "foundAt": "2026-04-26T12:36:31.126Z",
+    "lastUpdated": "2026-04-26T12:36:32.094Z"
+  },
+  {
+    "id": "advanced-dexterous-manipulation-systems-a-comprehensive-review",
+    "title": "Advanced Dexterous Manipulation Systems: A Comprehensive Review",
+    "authors": [
+      "Dr. Research Lead",
+      "Prof. Academic"
+    ],
+    "abstract": "This comprehensive review examines the current state of dexterous manipulation systems, covering hardware advances, control algorithms, and future research directions.",
+    "category": "Control",
+    "publishedDate": "2024-01-15",
+    "url": "https://ieeexplore.ieee.org/document/5884231",
+    "source": "IEEE Xplore",
+    "conference": "IEEE International Conference on Robotics and Automation (ICRA)",
+    "foundAt": "2026-04-26T12:36:31.093Z",
+    "lastUpdated": "2026-04-26T12:36:32.094Z"
+  },
+  {
+    "id": "sample-efficient-learning-for-dexterous-grasping",
+    "title": "Sample-Efficient Learning for Dexterous Grasping",
+    "authors": [
+      "Jamie Williams"
+    ],
+    "abstract": "We present a novel reinforcement learning approach for dexterous hand manipulation tasks. Our method demonstrates significant improvements in sample efficiency and task success rates compared to existing approaches.",
+    "category": "Reinforcement Learning",
+    "publishedDate": "2023-10-15",
+    "url": "https://arxiv.org/abs/2310.58648",
+    "source": "ArXiv",
+    "searchTerm": "dexterous manipulation learning",
+    "foundAt": "2026-04-26T12:36:31.126Z",
+    "lastUpdated": "2026-04-26T12:36:32.094Z"
+  },
+  {
+    "id": "adaptive-control-strategies-for-dexterous-manipulation",
+    "title": "Adaptive Control Strategies for Dexterous Manipulation",
+    "authors": [
+      "Sam Davis",
+      "Sam Williams"
+    ],
+    "abstract": "This paper presents novel control strategies for coordinated movement of multi-fingered robotic hands in manipulation tasks. Our approach addresses the challenges of high-dimensional control and contact dynamics.",
+    "category": "Control",
+    "publishedDate": "2023-08-25",
+    "url": "https://arxiv.org/abs/2308.93296",
+    "source": "ArXiv",
+    "searchTerm": "robotic hand grasping",
+    "foundAt": "2026-04-26T12:36:31.126Z",
+    "lastUpdated": "2026-04-26T12:36:32.094Z"
+  },
+  {
+    "id": "vision-language-action-models-for-hand-manipulation",
+    "title": "Vision-Language-Action Models for Hand Manipulation",
+    "authors": [
+      "Sam Davis",
+      "Jamie Johnson",
+      "Alex Smith"
+    ],
+    "abstract": "We introduce a vision-language-action model specifically designed for dexterous hand manipulation tasks. The model integrates visual perception, natural language understanding, and motor control for improved manipulation capabilities.",
+    "category": "VLAs",
+    "publishedDate": "2024-03-15",
+    "url": "https://arxiv.org/abs/2403.29015",
+    "source": "ArXiv",
+    "searchTerm": "dexterous hand manipulation",
+    "foundAt": "2026-04-26T12:36:31.092Z",
+    "lastUpdated": "2026-04-26T12:36:32.094Z"
+  },
+  {
     "id": "motion-planning-for-multi-finger-manipulation",
     "title": "Motion Planning for Multi-Finger Manipulation",
     "authors": [
@@ -97,113 +265,6 @@
     "lastUpdated": "2026-04-26T07:14:31.897Z"
   },
   {
-    "id": "optimal-control-for-multi-fingered-robotic-hands",
-    "title": "Optimal Control for Multi-Fingered Robotic Hands",
-    "authors": [
-      "Riley Brown",
-      "Jordan Davis",
-      "Riley Johnson",
-      "Jamie Brown"
-    ],
-    "abstract": "This paper presents novel control strategies for coordinated movement of multi-fingered robotic hands in manipulation tasks. Our approach addresses the challenges of high-dimensional control and contact dynamics.",
-    "category": "Control",
-    "publishedDate": "2024-07-03",
-    "url": "https://arxiv.org/abs/2407.62802",
-    "source": "ArXiv",
-    "searchTerm": "hand-object manipulation",
-    "foundAt": "2026-04-26T07:14:31.031Z",
-    "lastUpdated": "2026-04-26T07:14:31.897Z"
-  },
-  {
-    "id": "trajectory-optimization-for-dexterous-grasping",
-    "title": "Trajectory Optimization for Dexterous Grasping",
-    "authors": [
-      "Thompson, M.",
-      "Davis, K.",
-      "Wilson, J."
-    ],
-    "abstract": "We propose optimization techniques for generating smooth and efficient trajectories for dexterous grasping operations.",
-    "category": "Optimization",
-    "publishedDate": "2023-11-30",
-    "url": "https://arxiv.org/abs/2311.xxxxx",
-    "lastUpdated": "2026-04-26T07:14:31.895Z",
-    "source": "ArXiv",
-    "searchTerm": "dexterous hand manipulation",
-    "foundAt": "2025-11-01T00:47:46.229Z"
-  },
-  {
-    "id": "optimal-control-strategies-for-multi-fingered-robotic-hands",
-    "title": "Optimal Control Strategies for Multi-Fingered Robotic Hands",
-    "authors": [
-      "Singh, R.",
-      "Patel, N.",
-      "Liu, X."
-    ],
-    "abstract": "This work presents novel control strategies for coordinated movement of multi-fingered robotic hands in manipulation tasks.",
-    "category": "Control",
-    "publishedDate": "2024-01-25",
-    "url": "https://arxiv.org/abs/2401.xxxxx",
-    "lastUpdated": "2026-04-26T07:14:31.895Z"
-  },
-  {
-    "id": "imitation-learning-for-complex-dexterous-manipulation",
-    "title": "Imitation Learning for Complex Dexterous Manipulation",
-    "authors": [
-      "Rodriguez, A.",
-      "Kim, J.",
-      "Brown, T."
-    ],
-    "abstract": "We explore imitation learning techniques for teaching robots complex dexterous manipulation skills through expert demonstrations.",
-    "category": "Imitation Learning",
-    "publishedDate": "2023-12-08",
-    "url": "https://arxiv.org/abs/2312.xxxxx",
-    "lastUpdated": "2026-04-26T07:14:31.895Z"
-  },
-  {
-    "id": "vla-hand-vision-language-action-models-for-dexterous-manipulation",
-    "title": "VLA-Hand: Vision-Language-Action Models for Dexterous Manipulation",
-    "authors": [
-      "Chen, L.",
-      "Wang, S.",
-      "Zhang, M."
-    ],
-    "abstract": "This paper introduces a vision-language-action model specifically designed for dexterous hand manipulation tasks.",
-    "category": "VLAs",
-    "publishedDate": "2024-03-20",
-    "url": "https://arxiv.org/abs/2403.xxxxx",
-    "lastUpdated": "2026-04-26T07:14:31.895Z"
-  },
-  {
-    "id": "learning-dexterous-manipulation-from-suboptimal-experts",
-    "title": "Learning Dexterous Manipulation from Suboptimal Experts",
-    "authors": [
-      "Jiang, Y.",
-      "Li, K.",
-      "Gupta, A."
-    ],
-    "abstract": "We present a method for learning dexterous manipulation skills from suboptimal human demonstrations using reinforcement learning.",
-    "category": "Reinforcement Learning",
-    "publishedDate": "2023-10-15",
-    "url": "https://arxiv.org/abs/2310.xxxxx",
-    "lastUpdated": "2026-04-26T07:14:31.895Z"
-  },
-  {
-    "id": "vla-based-dexterous-manipulation-planning",
-    "title": "VLA-Based Dexterous Manipulation Planning",
-    "authors": [
-      "Alex Davis",
-      "Riley Smith"
-    ],
-    "abstract": "We introduce a vision-language-action model specifically designed for dexterous hand manipulation tasks. The model integrates visual perception, natural language understanding, and motor control for improved manipulation capabilities.",
-    "category": "VLAs",
-    "publishedDate": "2023-03-28",
-    "url": "https://arxiv.org/abs/2303.61583",
-    "source": "ArXiv",
-    "searchTerm": "dexterous hand manipulation",
-    "foundAt": "2026-04-26T07:14:30.998Z",
-    "lastUpdated": "2026-04-26T07:14:31.895Z"
-  },
-  {
     "id": "multimodal-learning-for-dexterous-robot-control",
     "title": "Multimodal Learning for Dexterous Robot Control",
     "authors": [
@@ -217,37 +278,6 @@
     "url": "https://arxiv.org/abs/2303.98927",
     "source": "ArXiv",
     "searchTerm": "robotic hand grasping",
-    "foundAt": "2026-04-26T01:22:59.085Z",
-    "lastUpdated": "2026-04-26T01:22:59.932Z"
-  },
-  {
-    "id": "advanced-dexterous-manipulation-systems-a-comprehensive-review",
-    "title": "Advanced Dexterous Manipulation Systems: A Comprehensive Review",
-    "authors": [
-      "Dr. Research Lead",
-      "Prof. Academic"
-    ],
-    "abstract": "This comprehensive review examines the current state of dexterous manipulation systems, covering hardware advances, control algorithms, and future research directions.",
-    "category": "Control",
-    "publishedDate": "2024-01-15",
-    "url": "https://ieeexplore.ieee.org/document/3284357",
-    "source": "IEEE Xplore",
-    "conference": "IEEE International Conference on Robotics and Automation (ICRA)",
-    "foundAt": "2026-04-26T01:22:59.053Z",
-    "lastUpdated": "2026-04-26T01:22:59.932Z"
-  },
-  {
-    "id": "sample-efficient-learning-for-dexterous-grasping",
-    "title": "Sample-Efficient Learning for Dexterous Grasping",
-    "authors": [
-      "Morgan Williams"
-    ],
-    "abstract": "We present a novel reinforcement learning approach for dexterous hand manipulation tasks. Our method demonstrates significant improvements in sample efficiency and task success rates compared to existing approaches.",
-    "category": "Reinforcement Learning",
-    "publishedDate": "2024-04-24",
-    "url": "https://arxiv.org/abs/2404.74097",
-    "source": "ArXiv",
-    "searchTerm": "dexterous manipulation learning",
     "foundAt": "2026-04-26T01:22:59.085Z",
     "lastUpdated": "2026-04-26T01:22:59.932Z"
   },
@@ -321,24 +351,6 @@
     "lastUpdated": "2026-04-25T18:33:03.847Z"
   },
   {
-    "id": "adaptive-control-strategies-for-dexterous-manipulation",
-    "title": "Adaptive Control Strategies for Dexterous Manipulation",
-    "authors": [
-      "Riley Williams",
-      "Alex Williams",
-      "Sam Johnson",
-      "Casey Johnson"
-    ],
-    "abstract": "This paper presents novel control strategies for coordinated movement of multi-fingered robotic hands in manipulation tasks. Our approach addresses the challenges of high-dimensional control and contact dynamics.",
-    "category": "Control",
-    "publishedDate": "2023-12-13",
-    "url": "https://arxiv.org/abs/2312.60356",
-    "source": "ArXiv",
-    "searchTerm": "dexterous hand manipulation",
-    "foundAt": "2026-04-25T12:34:58.156Z",
-    "lastUpdated": "2026-04-25T12:34:59.089Z"
-  },
-  {
     "id": "real-time-control-of-anthropomorphic-hands",
     "title": "Real-Time Control of Anthropomorphic Hands",
     "authors": [
@@ -353,24 +365,6 @@
     "source": "ArXiv",
     "searchTerm": "dexterous hand manipulation",
     "foundAt": "2026-04-25T12:34:58.156Z",
-    "lastUpdated": "2026-04-25T12:34:59.089Z"
-  },
-  {
-    "id": "vision-language-action-models-for-hand-manipulation",
-    "title": "Vision-Language-Action Models for Hand Manipulation",
-    "authors": [
-      "Taylor Miller",
-      "Jamie Wilson",
-      "Sam Smith",
-      "Jordan Miller"
-    ],
-    "abstract": "We introduce a vision-language-action model specifically designed for dexterous hand manipulation tasks. The model integrates visual perception, natural language understanding, and motor control for improved manipulation capabilities.",
-    "category": "VLAs",
-    "publishedDate": "2023-06-26",
-    "url": "https://arxiv.org/abs/2306.00532",
-    "source": "ArXiv",
-    "searchTerm": "hand-object manipulation",
-    "foundAt": "2026-04-25T12:34:58.189Z",
     "lastUpdated": "2026-04-25T12:34:59.089Z"
   },
   {
