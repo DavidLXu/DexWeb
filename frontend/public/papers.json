@@ -3,16 +3,19 @@
     "id": "multi-agent-rl-for-coordinated-finger-movement",
     "title": "Multi-Agent RL for Coordinated Finger Movement",
     "authors": [
-      "Jordan Brown"
+      "Taylor Smith",
+      "Morgan Miller",
+      "Jamie Smith",
+      "Jordan Miller"
     ],
     "abstract": "We present a novel reinforcement learning approach for dexterous hand manipulation tasks. Our method demonstrates significant improvements in sample efficiency and task success rates compared to existing approaches.",
     "category": "Reinforcement Learning",
-    "publishedDate": "2024-02-18",
-    "url": "https://arxiv.org/abs/2402.63531",
+    "publishedDate": "2023-12-05",
+    "url": "https://arxiv.org/abs/2312.82673",
     "source": "ArXiv",
-    "searchTerm": "dexterous manipulation learning",
-    "foundAt": "2026-05-24T18:56:52.052Z",
-    "lastUpdated": "2026-05-24T18:56:52.734Z"
+    "searchTerm": "robotic hand grasping",
+    "foundAt": "2026-05-25T02:03:38.800Z",
+    "lastUpdated": "2026-05-25T02:03:39.471Z"
   },
   {
     "id": "trajectory-optimization-for-dexterous-grasping",
@@ -26,7 +29,7 @@
     "category": "Optimization",
     "publishedDate": "2023-11-30",
     "url": "https://arxiv.org/abs/2311.xxxxx",
-    "lastUpdated": "2026-05-24T18:56:52.734Z",
+    "lastUpdated": "2026-05-25T02:03:39.471Z",
     "source": "ArXiv",
     "searchTerm": "dexterous hand manipulation",
     "foundAt": "2025-11-01T00:47:46.229Z"
@@ -43,7 +46,7 @@
     "category": "Control",
     "publishedDate": "2024-01-25",
     "url": "https://arxiv.org/abs/2401.xxxxx",
-    "lastUpdated": "2026-05-24T18:56:52.734Z"
+    "lastUpdated": "2026-05-25T02:03:39.471Z"
   },
   {
     "id": "imitation-learning-for-complex-dexterous-manipulation",
@@ -57,7 +60,7 @@
     "category": "Imitation Learning",
     "publishedDate": "2023-12-08",
     "url": "https://arxiv.org/abs/2312.xxxxx",
-    "lastUpdated": "2026-05-24T18:56:52.734Z"
+    "lastUpdated": "2026-05-25T02:03:39.471Z"
   },
   {
     "id": "vla-hand-vision-language-action-models-for-dexterous-manipulation",
@@ -71,7 +74,7 @@
     "category": "VLAs",
     "publishedDate": "2024-03-20",
     "url": "https://arxiv.org/abs/2403.xxxxx",
-    "lastUpdated": "2026-05-24T18:56:52.734Z"
+    "lastUpdated": "2026-05-25T02:03:39.471Z"
   },
   {
     "id": "learning-dexterous-manipulation-from-suboptimal-experts",
@@ -85,7 +88,58 @@
     "category": "Reinforcement Learning",
     "publishedDate": "2023-10-15",
     "url": "https://arxiv.org/abs/2310.xxxxx",
-    "lastUpdated": "2026-05-24T18:56:52.734Z"
+    "lastUpdated": "2026-05-25T02:03:39.471Z"
+  },
+  {
+    "id": "multimodal-learning-for-dexterous-robot-control",
+    "title": "Multimodal Learning for Dexterous Robot Control",
+    "authors": [
+      "Morgan Miller",
+      "Jordan Wilson",
+      "Alex Johnson"
+    ],
+    "abstract": "We introduce a vision-language-action model specifically designed for dexterous hand manipulation tasks. The model integrates visual perception, natural language understanding, and motor control for improved manipulation capabilities.",
+    "category": "VLAs",
+    "publishedDate": "2023-01-18",
+    "url": "https://arxiv.org/abs/2301.87097",
+    "source": "ArXiv",
+    "searchTerm": "dexterous hand manipulation",
+    "foundAt": "2026-05-25T02:03:38.767Z",
+    "lastUpdated": "2026-05-25T02:03:39.471Z"
+  },
+  {
+    "id": "expert-demonstration-analysis-in-hand-manipulation",
+    "title": "Expert Demonstration Analysis in Hand Manipulation",
+    "authors": [
+      "Jamie Johnson",
+      "Sam Smith"
+    ],
+    "abstract": "This work explores imitation learning techniques for teaching robots complex dexterous manipulation skills through expert demonstrations. We show that our approach can learn intricate manipulation behaviors from limited demonstration data.",
+    "category": "Imitation Learning",
+    "publishedDate": "2023-05-13",
+    "url": "https://arxiv.org/abs/2305.24852",
+    "source": "ArXiv",
+    "searchTerm": "dexterous hand manipulation",
+    "foundAt": "2026-05-25T02:03:38.767Z",
+    "lastUpdated": "2026-05-25T02:03:39.471Z"
+  },
+  {
+    "id": "behavioral-cloning-for-multi-finger-robot-hands",
+    "title": "Behavioral Cloning for Multi-Finger Robot Hands",
+    "authors": [
+      "Sam Chen",
+      "Jamie Johnson",
+      "Jordan Miller",
+      "Morgan Smith"
+    ],
+    "abstract": "This work explores imitation learning techniques for teaching robots complex dexterous manipulation skills through expert demonstrations. We show that our approach can learn intricate manipulation behaviors from limited demonstration data.",
+    "category": "Imitation Learning",
+    "publishedDate": "2024-09-19",
+    "url": "https://arxiv.org/abs/2409.78924",
+    "source": "ArXiv",
+    "searchTerm": "multi-finger robot control",
+    "foundAt": "2026-05-25T02:03:38.800Z",
+    "lastUpdated": "2026-05-25T02:03:39.471Z"
   },
   {
     "id": "advanced-dexterous-manipulation-systems-a-comprehensive-review",
@@ -101,56 +155,6 @@
     "source": "IEEE Xplore",
     "conference": "IEEE International Conference on Robotics and Automation (ICRA)",
     "foundAt": "2026-05-24T18:56:52.019Z",
-    "lastUpdated": "2026-05-24T18:56:52.734Z"
-  },
-  {
-    "id": "multimodal-learning-for-dexterous-robot-control",
-    "title": "Multimodal Learning for Dexterous Robot Control",
-    "authors": [
-      "Jamie Miller",
-      "Alex Smith",
-      "Riley Wilson"
-    ],
-    "abstract": "We introduce a vision-language-action model specifically designed for dexterous hand manipulation tasks. The model integrates visual perception, natural language understanding, and motor control for improved manipulation capabilities.",
-    "category": "VLAs",
-    "publishedDate": "2023-12-20",
-    "url": "https://arxiv.org/abs/2312.40188",
-    "source": "ArXiv",
-    "searchTerm": "dexterous manipulation learning",
-    "foundAt": "2026-05-24T18:56:52.052Z",
-    "lastUpdated": "2026-05-24T18:56:52.734Z"
-  },
-  {
-    "id": "expert-demonstration-analysis-in-hand-manipulation",
-    "title": "Expert Demonstration Analysis in Hand Manipulation",
-    "authors": [
-      "Casey Smith"
-    ],
-    "abstract": "This work explores imitation learning techniques for teaching robots complex dexterous manipulation skills through expert demonstrations. We show that our approach can learn intricate manipulation behaviors from limited demonstration data.",
-    "category": "Imitation Learning",
-    "publishedDate": "2023-09-06",
-    "url": "https://arxiv.org/abs/2309.05076",
-    "source": "ArXiv",
-    "searchTerm": "dexterous hand manipulation",
-    "foundAt": "2026-05-24T18:56:52.019Z",
-    "lastUpdated": "2026-05-24T18:56:52.734Z"
-  },
-  {
-    "id": "behavioral-cloning-for-multi-finger-robot-hands",
-    "title": "Behavioral Cloning for Multi-Finger Robot Hands",
-    "authors": [
-      "Sam Brown",
-      "Jordan Wilson",
-      "Riley Chen",
-      "Alex Brown"
-    ],
-    "abstract": "This work explores imitation learning techniques for teaching robots complex dexterous manipulation skills through expert demonstrations. We show that our approach can learn intricate manipulation behaviors from limited demonstration data.",
-    "category": "Imitation Learning",
-    "publishedDate": "2024-04-16",
-    "url": "https://arxiv.org/abs/2404.40981",
-    "source": "ArXiv",
-    "searchTerm": "multi-finger robot control",
-    "foundAt": "2026-05-24T18:56:52.052Z",
     "lastUpdated": "2026-05-24T18:56:52.734Z"
   },
   {
